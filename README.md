@@ -20,11 +20,11 @@ An example of running the class is as follows.  This will create a hprof in `/tm
 
     su -l userjvmprocess -c "java -classpath /usr/java/default/lib/tools.jar:/tmp/dumpper-0.0.1-SNAPSHOT.jar org.greencheek.jvmtools.HeapDumper <javapid>" -s /bin/bash
 
-- To change the file name use the system property `-Ddumpfile=/where/you/want.hprof`.
+To change the file name use the system property `-Ddumpfile=/where/you/want.hprof`.
 
     su -l userjvmprocess -c "java -Ddumpfile=/tmp/jvm1.hprof -classpath /usr/java/default/lib/tools.jar:/tmp/dumper-0.0.1-SNAPSHOT.jar org.greencheek.jvmtools.HeapDumper 26814" -s /bin/bash
 
-- To dump only the live reachable objects in the heap use the system property: `-Ddumpliveonly=true`
+To dump only the live reachable objects in the heap use the system property: `-Ddumpliveonly=true`
 
     su -l userjvmprocess -c "java -Ddumpfile=/tmp/jvm1.hprof -Ddumpliveonly=true -classpath /usr/java/default/lib/tools.jar:/tmp/dumper-0.0.1-SNAPSHOT.jar org.greencheek.jvmtools.HeapDumper 26814" -s /bin/bash
 
