@@ -33,7 +33,7 @@
         <connection>scm:git:git@github.com:tootedom/dumper.git</connection>
         <url>scm:git:git@github.com:tootedom/dumper.git</url>
         <developerConnection>scm:git:git@github.com:tootedom/dumper.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>dumper-0.0.1</tag>
     </scm>
 	<properties>
         <jvmargs />
@@ -69,13 +69,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.0</version>
+                <version>3.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <compilerVersion>1.8</compilerVersion>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -148,7 +148,7 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>org.greencheek.jvmtools.HeapDumper</mainClass>
                                 </transformer>
