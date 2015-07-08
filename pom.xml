@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.greencheek.jvmtools</groupId>
 	<artifactId>dumper</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>dumper</name>
@@ -33,7 +33,7 @@
         <connection>scm:git:git@github.com:tootedom/dumper.git</connection>
         <url>scm:git:git@github.com:tootedom/dumper.git</url>
         <developerConnection>scm:git:git@github.com:tootedom/dumper.git</developerConnection>
-        <tag>dumper-0.0.3</tag>
+        <tag>dumper-0.0.1</tag>
     </scm>
 	<properties>
         <jvmargs />
