@@ -57,7 +57,6 @@ public class HeapDumper {
         } catch (IOException ioe) {
             logger.error("Exception attaching or reading a jvm.", ioe);
         } finally {
-//            detachSilently(virtualMachine);
         }
         return virtualMachine;
     }
